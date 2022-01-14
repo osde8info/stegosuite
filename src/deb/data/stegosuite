@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DIRNAME="/usr/share/stegosuite"
+STEGOSUITEJAR=$(echo $DIRNAME/stegosuite-*.jar)
+
+# Setup the classpath
+if [ ! -f "$STEGOSUITEJAR" ]; then
+    die "Missing required file: $STEGOSUITEJAR"
+fi
+
+STEGOSUITE_CLASSPATH="$STEGOSUITEJAR"
+
+java -jar $STEGOSUITE_CLASSPATH $@

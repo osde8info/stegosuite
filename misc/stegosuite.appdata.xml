@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+​  <id>org.stegosuite</id>
+​  <metadata_license>CC-BY-SA-4.0</metadata_license>
+​  <project_license>GPL-3.0</project_license>
+​  <name>Stegosuite</name>
+​  <summary>Steganography tool to hide information in image files</summary>
+​
+​  <description>
+​    <p>
+​      Stegosuite is a graphical steganography tool to easily hide information in image files. It allows the embedding of text messages and multiple files of any type. In addition, the embedded data is encrypted using AES. Currently supported file types are BMP, GIF, JPG and PNG.
+​    </p>   
+​  </description>
+​
+​  <launchable type="desktop-id">stegosuite.desktop</launchable>
+​
+​  <screenshots>
+​    <screenshot type="default">
+​      <caption>Embedding of 2 files</caption>
+​      <image>https://screenshots.debian.net/screenshot/stegosuite</image>
+​    </screenshot>
+​  </screenshots>
+​
+​  <url type="homepage">https://dev.stegosuite.org/stegosuite/stegosuite</url>
+​  
+  <provides>
+​    <binary>stegosuite</binary>
+​  </provides>
+
+  <categories>
+​    <category>Graphics</category>
+​    <category>2DGraphics</category>
+    <category>RasterGraphics</category>
+​  </categories>
+​
+  <mimetypes>
+​    <mimetype>image/gif</mimetype>
+​    <mimetype>image/jpeg</mimetype>
+​    <mimetype>image/bmp</mimetype>
+    <mimetype>image/png</mimetype>
+​  </mimetypes>
+
+  <update_contact>tobias_AT_stegosuite.org</update_contact>
+
+​</component>

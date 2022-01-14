@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Stegosuite
+Categories=Graphics;2DGraphics;RasterGraphics;
+Comment=A steganography tool
+Exec=stegosuite %u
+Icon=/usr/share/stegosuite/icons/stegosuite.png
+MimeType=image/gif;image/bmp;image/jpeg;
+Keywords=steganography;embed;extract;image;hide;stego;
+Terminal=false
+Type=Application

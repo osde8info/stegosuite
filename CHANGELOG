@@ -1,0 +1,17 @@
+0.8.0
+	- added png support
+	- added command-line interface
+
+0.7.3
+	- updated .desktop file
+	- internal changes
+	
+0.7.2
+	- disabled cli
+	- more information in pom.xml
+
+0.7.1
+	- small packaging fixes
+
+0.7.0
+    - Initial release

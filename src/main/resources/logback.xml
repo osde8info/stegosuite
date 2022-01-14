@@ -1,0 +1,29 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<encoder>
+			<pattern>%date{HH:mm:ss.SSS} @ %thread (%replace(%class{0}.java:%line){'\$\w+\.', '\.'}\) %message%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="infoLog" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<encoder>
+			<pattern>%message%n</pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="infoLog" />
+	</root>
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
